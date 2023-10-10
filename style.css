@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ffffff, #2a7991);
+  padding: 10px;
+}
+
+.todo {
+  width: 100%;
+  max-width: 700px;
+  min-width: 400px;
+  background: #fff;
+  margin: 100px auto 20px;
+  padding: 40px 30px 70px;
+  border-radius: 10px;
+}
+
+.todo h2 {
+  color: #104e61;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.todo h2 img {
+  width: 30px;
+  margin-left: 10px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  background: #edeef0;
+  justify-content: space-between;
+  border-radius: 30px;
+  padding-left: 20px;
+  margin-bottom: 25px;
+  border: 2px solid #2a7991;
+}
+
+input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 10px;
+}
+button,
+button-delete {
+  border: none;
+  outline: none;
+  background: #2a7991;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 40px;
+  padding: 8px 16px;
+  margin-right: 5px;
+}
+
+button-delete:hover {
+  background: rgb(130, 36, 36);
+}
+
+#button-add {
+    border: none;
+    outline: none;
+    background: #104e61;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+    padding: 8px 16px;
+    margin-right: 5px;
+  }
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.2s;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+span {
+  flex: 6;
+  font-size: 18px;
+  color: #333;
+}
+
+.task-text[contenteditable="true"] {
+  outline: none;
+}
+
+.done .task-text {
+  text-decoration: line-through;
+  color: #888;
+}
+
+button.edit-button {
+  background: #2a7991;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  padding: 8px 16px;
+  margin-right: 5px;
+}
+
+button.edit-button:hover {
+  background: #2a7991;
+}
+
+.save-button-hidden {
+  display: none;
+}
+
+.save-button {
+    background: green;
+}
