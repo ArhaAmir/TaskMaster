@@ -133,6 +133,6 @@ button.edit-button:hover {
   display: none;
 }
 
-.save-button {
+.save-button,#button-add:hover {
     background: green;
 }

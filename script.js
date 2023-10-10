@@ -141,14 +141,20 @@ function renderTasks() {
     const editButton = document.createElement("button");
     editButton.innerText = "Edit";
     editButton.classList.add("edit-button");
+    // Check if the task is done, and hide the "Edit" button accordingly
+      if (task.done) {
+        editButton.style.display = "none";
+      }
     editButton.addEventListener("click", function () {
-      editTask(i);
-      editButton.style.display = "none"; // Hide the Edit button on click
+      editTask(i); 
+      // Hide the Edit button on click
+      editButton.style.display = "none";
     });
 
     const saveButton = document.createElement("button");
     saveButton.innerText = "Save";
-    saveButton.classList.add("save-button", "save-button-hidden"); // Add save-button-hidden class to hide it
+    // Add save-button-hidden class to hide it
+    saveButton.classList.add("save-button", "save-button-hidden"); 
     saveButton.addEventListener("click", function () {
       saveTask(i);
     });
